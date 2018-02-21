@@ -1,5 +1,5 @@
 {
-  "name": "@hellpack/webpack-config",
+  "name": "@hellpack/packer",
   "version": "0.1.0",
   "description": "Advanced Webpack Configuration for Node",
   "main": "lib/index.js",
@@ -17,7 +17,6 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
-    "flow-runtime": "^0.17.0",
     "fs-extra": "^5.0.0",
     "webpack": "^3.11.0",
     "webpack-node-externals": "^1.6.0"

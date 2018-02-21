@@ -7,7 +7,7 @@ const appDirectory = fs.realpathSync(process.cwd())
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath)
 
 module.exports = ({ entry, output }) => ({
-  entry: [require.resolve('babel-polyfill'), require.resolve('flow-runtime'), ...entry],
+  entry: [require.resolve('babel-polyfill'), ...entry],
   output,
   target: 'node',
   node: {
