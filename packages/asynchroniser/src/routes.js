@@ -6,7 +6,7 @@ const func = (rt: string) => rt + 'Changed'
 
 router.route('/').get(async (req, res) => {
   const response = await Promise.resolve('Server Working Fine')
-  console.log(func('Hello'))
+  console.log(func(57))
   res.json(response)
 })
 

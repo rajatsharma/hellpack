@@ -1,5 +1,5 @@
 {
-  "name": "@jetpack/asynchronizer",
+  "name": "asynchronizer",
   "version": "0.0.1",
   "description": "Asynchronous Functions with Node",
   "main": "index.js",
