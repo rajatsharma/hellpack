@@ -1,9 +1,0 @@
-{
-  "parser": "babel-eslint",
-  "extends": "standard",
-  "plugins": [
-    "import",
-		"flowtype",
-		"flowtype-errors"
-	]
-}

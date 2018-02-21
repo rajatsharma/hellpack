@@ -1,0 +1,6 @@
+{
+  "extends": "@hellpack/hellpack",
+  "rules": {
+    "prefer-template": 0
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "asynchronizer",
+  "name": "@hellpack/example",
   "version": "0.0.1",
   "description": "Asynchronous Functions with Node",
   "main": "index.js",
@@ -14,17 +14,13 @@
   "author": "Rajat Sharma",
   "license": "MIT",
   "devDependencies": {
-    "@jetpack/node-alpha": "^0.1.0",
+    "@hellpack/eslint-config-hellpack": "^1.0.0",
     "cross-env": "^5.1.0",
     "eslint": "^4.9.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.0",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
     "nodemon": "^1.12.1"
   },
   "dependencies": {
+    "@hellpack/webpack-config": "^0.1.0",
     "body-parser": "^1.18.2",
     "compression": "^1.7.1",
     "express": "^4.16.2",
