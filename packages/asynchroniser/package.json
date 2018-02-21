@@ -1,0 +1,33 @@
+{
+  "name": "@jetpack/asynchronizer",
+  "version": "0.0.1",
+  "description": "Asynchronous Functions with Node",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node scripts/deploy.js deploy",
+    "start": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=development nodemon index.js",
+    "start:prod": "cross-env NODE_ENV=production node index.js",
+    "heroku": "NODE_ENV=production node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production node scripts/build.js"
+  },
+  "author": "Rajat Sharma",
+  "license": "MIT",
+  "devDependencies": {
+    "@jetpack/node-alpha": "^0.1.0",
+    "cross-env": "^5.1.0",
+    "eslint": "^4.9.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
+    "flow-runtime": "^0.17.0"
+  }
+}
