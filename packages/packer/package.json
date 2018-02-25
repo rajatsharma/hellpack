@@ -1,12 +1,13 @@
 {
   "name": "@hellpack/packer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Advanced Webpack Configuration for Node",
   "main": "lib/index.js",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.0.0-beta.40",
     "@babel/register": "^7.0.0-beta.40",
+    "@hellpack/globals": "^1.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-flow-runtime": "^0.17.0",

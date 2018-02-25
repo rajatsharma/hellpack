@@ -1,0 +1,24 @@
+{
+  "name": "@hellpack/globals",
+  "version": "1.0.0",
+  "description": "Necessary Globals Required in Modern Node Project",
+  "main": "index.js",
+  "scripts": {
+    "build": "ENV=prod node build.js"
+  },
+  "files":[
+    "index.js"
+  ],
+  "keywords": [
+    "webpack",
+    "fetch",
+    "es6"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.0.0"
+  },
+  "devDependencies": {
+    "@hellpack/charger": "^1.0.3"
+  }
+}
