@@ -1,15 +1,22 @@
 const excludedImports = ['express-helpers'];
-module.exports = {
+const globals = ['fetch', 'Transformer', 'System'];
+
+const config = {
   parser: 'babel-eslint',
   extends: require.resolve('eslint-config-airbnb-base'),
-  plugins: ['import', 'flowtype', 'flowtype-errors'],
+  plugins: ['import'],
+  globals: globals.reduce(
+    (acc, x) => Object.assign({}, acc, { [x]: true }),
+    {},
+  ),
   rules: {
     'import/no-unresolved': ['error', { ignore: excludedImports }],
     'import/extensions': ['error', 'never', { ignore: excludedImports }],
-    'flowtype-errors/show-errors': 'error',
     'no-unused-vars': [
       'error',
       { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
     ],
   },
 };
+
+module.exports = config;
