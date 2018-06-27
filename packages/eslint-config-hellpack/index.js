@@ -3,7 +3,7 @@ const globals = ['fetch', 'Transformer', 'System'];
 
 const config = {
   parser: 'babel-eslint',
-  extends: require.resolve('eslint-config-airbnb-base'),
+  extends: [require.resolve('eslint-config-airbnb-base'), require.resolve('eslint-config-prettier')],
   plugins: ['import'],
   globals: globals.reduce(
     (acc, x) => Object.assign({}, acc, { [x]: true }),
