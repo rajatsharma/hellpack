@@ -1,0 +1,13 @@
+{
+  "name": "@hellpack/prettier",
+  "version": "0.1.0",
+  "description": "Hellpack Prettier Config",
+  "main": "index.js",
+  "keywords": [
+    "prettier"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "1.13.2"
+  }
+}

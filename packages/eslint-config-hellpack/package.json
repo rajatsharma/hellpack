@@ -10,13 +10,11 @@
     "airbnb"
   ],
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.9.0",
     "babel-eslint": "^8.2.2",
     "eslint": "^4.1.1",
     "eslint-plugin-import": "^2.8.0"
-  },
-  "dependencies": {
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-config-prettier": "2.9.0"
   }
 }
