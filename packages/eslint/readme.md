@@ -40,4 +40,4 @@ module.exports = require('@hellpack/eslint')({
 - `eslint-plugin-import`
 - `eslint-plugin-jsx-a11y`
 - `eslint-plugin-prettier`
-- `eslint-plugin-prettier`
+- `eslint-plugin-react`
