@@ -6,7 +6,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "lerna": "^3.4.3",
+    "lerna": "^3.5.1",
     "prettier": "^1.15.2"
   },
   "name": "hellpack"
