@@ -7,7 +7,7 @@ _Ultracommon Tsconfig for Babel Compiled Typescript Projects_
 - Install @hellpack/tsconfig `yarn add @hellpack/tsconfig -D`.
 - Create a tsconfig file in your project root and add this
 
-```json
+```javascript
 {
   "extends": "@hellpack/tsconfig"
   // Your Settings here
@@ -16,7 +16,7 @@ _Ultracommon Tsconfig for Babel Compiled Typescript Projects_
 
 - For example,
 
-```json
+```javascript
 {
   "extends": "@hellpack/tsconfig",
   "include": ["src"]
