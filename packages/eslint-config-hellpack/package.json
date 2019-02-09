@@ -1,7 +1,7 @@
 {
   "name": "@hellpack/eslint-config-hellpack",
-  "version": "1.0.11",
-  "description": "Hellpack Eslint Config",
+  "version": "2.0.0-alpha.1",
+  "description": "Hellpack Eslint Config Bridge",
   "main": "index.js",
   "keywords": [
     "eslint",
@@ -11,10 +11,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-config-prettier": "2.9.0",
-    "babel-eslint": "^8.2.2",
-    "eslint": "^4.1.1",
-    "eslint-plugin-import": "^2.8.0"
+    "@hellpack/eslint": "0.1.1"
   }
 }

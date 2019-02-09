@@ -1,6 +1,6 @@
 {
   "name": "@hellpack/eslint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hellpack React Eslint Config",
   "main": "index.js",
   "keywords": [
