@@ -11,7 +11,7 @@ Ultracommon eslint config used in my projects, no need to install `eslint`, `pre
 
 ```javascript
 module.exports = {
-  extends: ['hellpack'],
+  extends: ['@hellpack/hellpack'],
   // Custom config here
 };
 ```
@@ -20,7 +20,7 @@ module.exports = {
 
 ```javascript
 module.exports = {
-  extends: ['hellpack'],
+  extends: ['@hellpack/hellpack'],
   rules: {
     quotes: ['error', 'single'],
     'prefer-template': 0,

@@ -1,6 +1,6 @@
 {
   "name": "@hellpack/eslint-config-hellpack",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0-alpha.2",
   "description": "Hellpack Eslint Config Bridge",
   "main": "index.js",
   "keywords": [
@@ -11,6 +11,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@hellpack/eslint": "0.1.1"
+    "@hellpack/eslint": "0.1.1-alpha.1"
   }
 }
