@@ -1,6 +1,6 @@
 {
   "name": "@hellpack/eslint-config-hellpack",
-  "version": "2.0.0-alpha.2",
+  "version": "2.0.0-alpha.4",
   "description": "Hellpack Eslint Config Bridge",
   "main": "index.js",
   "keywords": [
@@ -14,6 +14,7 @@
     "babel-eslint": "10.0.1",
     "eslint": "5.6.0",
     "eslint-config-airbnb": "17.1.0",
-    "eslint-config-prettier": "3.3.0"
+    "eslint-config-prettier": "3.3.0",
+    "read-pkg-up": "^4.0.0"
   }
 }
