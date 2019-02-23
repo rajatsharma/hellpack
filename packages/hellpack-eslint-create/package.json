@@ -1,0 +1,11 @@
+{
+  "name": "hellpack-eslint-create",
+  "version": "0.1.0",
+  "description": "Hellpack React Eslint Config Generator",
+  "main": "index.js",
+  "bin": {
+    "hellpack-eslint-create": "./index.js"
+  },
+  "keywords": ["eslint", "config", "hellpack", "airbnb"],
+  "license": "MIT"
+}
