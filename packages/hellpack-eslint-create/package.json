@@ -1,6 +1,6 @@
 {
   "name": "hellpack-eslint-create",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "description": "Hellpack React Eslint Config Generator",
   "main": "index.js",
   "bin": {
