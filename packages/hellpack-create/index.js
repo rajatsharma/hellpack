@@ -1,4 +1,11 @@
 #!/usr/bin/env node
+const configType = process.argv[2];
+
+if (configType !== 'eslint') {
+  console.log('No config found,', configType);
+  process.exit();
+}
+
 const path = require('path');
 const { spawnSync } = require('child_process');
 const fs = require('fs');

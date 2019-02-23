@@ -7,7 +7,7 @@ Ultracommon eslint config used in my projects, automatically installs `eslint`, 
 #### Usage
 
 ```bash
-$ npx hellpack-eslint-create
+$ npx hellpack eslint
 ```
 
 ### Uses
