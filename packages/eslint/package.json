@@ -4,7 +4,7 @@
   "description": "Hellpack React Eslint Config Generator",
   "main": "index.js",
   "bin": {
-    "hellpack-eslint-create": "./index.js"
+    "create": "./index.js"
   },
   "keywords": ["eslint", "config", "hellpack", "airbnb"],
   "license": "MIT"
