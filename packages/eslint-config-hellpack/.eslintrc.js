@@ -22,12 +22,14 @@ module.exports = {
     require.resolve('eslint-config-prettier'),
     require.resolve('eslint-config-prettier/react'),
   ],
-  rules: {
-    'prettier/prettier': 'error',
-    'react/jsx-filename-extension': 0,
-    'no-unused-vars': [
-      'error',
-      { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
-    ],
-  },
+  rules: Object.assign(
+    reactInPackages ? { 'react/jsx-filename-extension': 0 } : {},
+    {
+      'prettier/prettier': 'error',
+      'no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
+    },
+  ),
 };
