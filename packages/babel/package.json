@@ -22,5 +22,6 @@
   "dependencies": {
     "@babel/preset-flow": "^7.0.0",
     "@lectro/babel-preset-lectro": "^1.1.2-beta-1"
-  }
+  },
+  "gitHead": "74a305a7e88f83a65785b2cbc5da786abdb70dfc"
 }

@@ -20,5 +20,6 @@
   "dependencies": {
     "eslint-config-airbnb": "15.1.0",
     "eslint-config-prettier": "2.9.0"
-  }
+  },
+  "gitHead": "74a305a7e88f83a65785b2cbc5da786abdb70dfc"
 }
