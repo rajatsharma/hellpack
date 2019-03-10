@@ -9,9 +9,9 @@ const { pkg, path: pkgPath } = readPkgUp.sync({
 const appDirectory = path.dirname(pkgPath);
 const packageJson = require(path.resolve(appDirectory, 'package.json'));
 
-const reactInPackages = Object.keys(packageJson.dependencies || {}).includes(
-  'react',
-);
+const reactInPackages =
+  Object.keys(packageJson.dependencies || {}).includes('react') ||
+  Object.keys(packageJson.devDependencies || {}).includes('react');
 
 module.exports = {
   parser: 'babel-eslint',
@@ -24,6 +24,7 @@ module.exports = {
   ],
   rules: {
     'prettier/prettier': 'error',
+    'react/jsx-filename-extension': 0,
     'no-unused-vars': [
       'error',
       { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
