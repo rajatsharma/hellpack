@@ -1,6 +1,6 @@
 {
   "name": "@hellpack/tsconfig",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ultra Common Tsconfig for my projects",
   "main": "index.js",
   "scripts": {
