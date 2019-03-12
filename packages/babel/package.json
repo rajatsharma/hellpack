@@ -1,6 +1,6 @@
 {
   "name": "@hellpack/babel",
-  "version": "0.1.2",
+  "version": "2.2.0",
   "description": "Ultracommon Babel Config",
   "main": "index.js",
   "private": true,
@@ -8,7 +8,12 @@
     "type": "git",
     "url": "git+https://github.com/rajatsharma/hellpack.git"
   },
-  "keywords": ["babel", "hellpack", "config", "rajatsharma"],
+  "keywords": [
+    "babel",
+    "hellpack",
+    "config",
+    "rajatsharma"
+  ],
   "author": "Rajat Sharma",
   "license": "MIT",
   "bugs": {

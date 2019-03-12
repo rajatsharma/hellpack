@@ -1,10 +1,15 @@
 {
   "name": "@hellpack/eslint-config-hellpack-react",
-  "version": "0.1.2",
+  "version": "2.2.0",
   "description": "Hellpack React Eslint Config",
   "main": "index.js",
   "private": true,
-  "keywords": ["eslint", "config", "hellpack", "airbnb"],
+  "keywords": [
+    "eslint",
+    "config",
+    "hellpack",
+    "airbnb"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "babel-eslint": "^8.1.2",
