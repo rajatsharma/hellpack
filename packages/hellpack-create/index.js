@@ -13,9 +13,9 @@ const fs = require('fs');
 /* eslint-disable import/no-dynamic-require */
 const packageContents = require(path.resolve(process.cwd(), 'package.json'));
 
-const reactInPackages = Object.keys(
-  packageContents.dependencies || {},
-).includes('react');
+const reactInPackages =
+  Object.keys(packageContents.dependencies || {}).includes('react') ||
+  Object.keys(packageContents.devDependencies || {}).includes('react');
 
 const core = ['eslint', 'prettier'];
 
