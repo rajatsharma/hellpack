@@ -15,7 +15,8 @@ const packageContents = require(path.resolve(process.cwd(), 'package.json'));
 
 const reactInPackages =
   Object.keys(packageContents.dependencies || {}).includes('react') ||
-  Object.keys(packageContents.devDependencies || {}).includes('react');
+  Object.keys(packageContents.devDependencies || {}).includes('react') ||
+  Object.keys(packageContents.peerDependencies || {}).includes('react');
 
 const core = ['eslint', 'prettier'];
 

@@ -3,6 +3,7 @@
   "version": "2.2.1",
   "description": "Hellpack React Eslint Config Generator",
   "main": "index.js",
+  "private": true,
   "bin": {
     "create": "./index.js"
   },

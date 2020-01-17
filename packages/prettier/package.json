@@ -3,6 +3,7 @@
   "version": "2.2.1",
   "description": "Hellpack Prettier Config",
   "main": "index.js",
+  "private": true,
   "keywords": [
     "prettier"
   ],

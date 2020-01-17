@@ -11,7 +11,8 @@ const packageJson = require(path.resolve(appDirectory, 'package.json'));
 
 const reactInPackages =
   Object.keys(packageJson.dependencies || {}).includes('react') ||
-  Object.keys(packageJson.devDependencies || {}).includes('react');
+  Object.keys(packageJson.devDependencies || {}).includes('react') ||
+  Object.keys(packageJson.peerDependencies || {}).includes('react');
 
 module.exports = {
   parser: 'babel-eslint',

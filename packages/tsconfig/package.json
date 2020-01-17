@@ -2,6 +2,7 @@
   "name": "@hellpack/tsconfig",
   "version": "2.2.1",
   "description": "Ultra Common Tsconfig for my projects",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
