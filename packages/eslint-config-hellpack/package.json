@@ -1,6 +1,6 @@
 {
   "name": "@hellpack/eslint-config-hellpack",
-  "version": "2.2.0",
+  "version": "2.2.2-alpha.0",
   "description": "Hellpack Eslint Config Bridge",
   "main": "index.js",
   "keywords": [

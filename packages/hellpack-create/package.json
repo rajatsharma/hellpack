@@ -1,12 +1,17 @@
 {
   "name": "hellpack",
-  "version": "2.2.2",
+  "version": "2.2.2-alpha.0",
   "description": "Hellpack React Eslint Config Generator",
   "main": "index.js",
   "bin": {
     "hellpack": "./index.js"
   },
-  "keywords": ["eslint", "config", "hellpack", "airbnb"],
+  "keywords": [
+    "eslint",
+    "config",
+    "hellpack",
+    "airbnb"
+  ],
   "license": "MIT",
   "gitHead": "83ce0f5a3dbe40be2822c26cc2c13393f50c8c6c"
 }
