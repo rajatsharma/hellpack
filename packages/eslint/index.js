@@ -41,6 +41,7 @@ if (installEslintPlugins.error || installEslintPlugins.status !== 0) {
       .join(' ')} -D`,
   );
 }
+
 const eslint = {
   extends: config,
   plugins,

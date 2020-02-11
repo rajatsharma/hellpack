@@ -26,6 +26,7 @@ const plugins = ['eslint-plugin-prettier', 'eslint-plugin-import'].concat(
   reactInPackages ? ['eslint-plugin-react', 'eslint-plugin-jsx-a11y'] : [],
 );
 
+
 const installEslintPlugins = spawnSync(
   'yarn',
   ['add', config, ...plugins, ...core, '-D'],
@@ -49,6 +50,7 @@ if (installEslintPlugins.error || installEslintPlugins.status !== 0) {
       .join(' ')} -D`,
   );
 }
+
 const eslint = {
   extends: config,
   plugins,
@@ -69,3 +71,5 @@ fs.writeFileSync(
   path.resolve(process.cwd(), '.prettierrc'),
   JSON.stringify(prettier, null, 2),
 );
+
+

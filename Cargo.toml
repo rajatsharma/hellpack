@@ -1,0 +1,8 @@
+[package]
+name = "create-hellpack"
+version = "0.1.0"
+authors = ["Rajat Sharma <lunasunkaiser@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde_json = ""

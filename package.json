@@ -1,13 +1,11 @@
 {
   "devDependencies": {
-    "babel-eslint": "^8.1.2",
-    "eslint": "4.18.2",
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "lerna": "^3.5.1",
-    "prettier": "^1.15.2"
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "lerna": "^3.5.1"
   },
-  "name": "hellpack"
+  "name": "hellpack",
+  "dependencies": {
+    "eslint-config-import": "^0.13.0"
+  }
 }
