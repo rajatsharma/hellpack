@@ -4,8 +4,5 @@
     "eslint-plugin-import": "^2.20.1",
     "lerna": "^3.5.1"
   },
-  "name": "hellpack",
-  "dependencies": {
-    "eslint-config-import": "^0.13.0"
-  }
+  "name": "hellpack"
 }

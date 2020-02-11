@@ -20,13 +20,10 @@ module.exports = {
     require.resolve(
       reactInPackages ? 'eslint-config-airbnb' : 'eslint-config-airbnb-base',
     ),
-    require.resolve('eslint-config-prettier'),
-    require.resolve('eslint-config-prettier/react'),
   ],
   rules: Object.assign(
     reactInPackages ? { 'react/jsx-filename-extension': 0 } : {},
     {
-      'prettier/prettier': 'error',
       'no-unused-vars': [
         'error',
         { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },

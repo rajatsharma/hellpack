@@ -15,7 +15,6 @@
     "eslint": "5.14.1",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-airbnb-base": "13.1.0",
-    "eslint-config-prettier": "3.3.0",
     "read-pkg-up": "^4.0.0"
   },
   "devDependencies": {

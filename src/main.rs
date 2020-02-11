@@ -1,10 +1,17 @@
-use serde_json::{from_str, Value};
+use serde_json::{from_str, json, to_string_pretty, Value};
 use std::env::args;
-use std::fs::read_to_string;
-use std::io::{self, Write};
-use std::process::{Command, Output};
+use std::fs::{read_to_string, write};
+use std::io::Error;
+use std::process::Command;
 
-fn main() {
+fn write_eslint_rc(eslint_deps: Vec<&str>) -> Result<(), Error> {
+  let (config, plugins) = eslint_deps.split_at(1);
+  let contents = json!({ "extends": config, "plugins": plugins });
+  write(".eslintrc", to_string_pretty(&contents).unwrap())?;
+  Ok(())
+}
+
+fn main() -> Result<(), Error> {
   let _react_eslint_deps = vec![
     "eslint-config-airbnb",
     "eslint-plugin-import",
@@ -13,17 +20,19 @@ fn main() {
     "eslint-plugin-react-hooks",
   ];
 
-  let _eslint_deps = vec!["eslint-config-airbnb-base", "eslint-config-import"];
+  println!("Hellpack working...🛠");
+
+  let _eslint_deps = vec!["eslint-config-airbnb-base", "eslint-plugin-import"];
   let pattern = args()
     .nth(1)
-    .expect("No option given, try again with hellpack eslint");
+    .expect("No option given, try again with hellpack eslint 🤷🏻‍♂️");
 
   if pattern != "eslint" {
-    panic!("No config found: {}", pattern)
+    panic!("No config found: {} ☹️", pattern)
   }
 
-  let data = read_to_string("package.json").expect("Unable to read package.json");
-  let parsed: Value = from_str(&data).expect("Invalid package.json");
+  let data = read_to_string("package.json").expect("Unable to read package.json 😵");
+  let parsed: Value = from_str(&data).expect("Invalid package.json ❌");
 
   let react_in_dependencies = match parsed["dependencies"].as_object() {
     Some(dependencies) => dependencies.contains_key("react"),
@@ -51,14 +60,21 @@ fn main() {
 
   let handle = eslint_deps
     .iter()
-    .fold(Command::new("yrn").arg("add"), |cmd, dep| cmd.arg(dep))
+    .fold(Command::new("yarn").arg("add"), |cmd, dep| cmd.arg(dep))
     .arg("-D")
     .spawn();
 
   match handle {
-    Ok(executed) => "Installed eslint successfully",
-    Error(err) => panic!("Eslint installation failed"),
+    Ok(mut c) => {
+      c.wait()?;
+      println!("Installed eslint successfully 🚀");
+      write_eslint_rc(eslint_deps)?;
+    }
+    Err(err) => {
+      println!("Eslint installation failed: {} 🤷🏻‍♂️", err);
+      write_eslint_rc(eslint_deps)?;
+    }
   }
 
-  println!("{}", is_react_project);
+  Ok(())
 }

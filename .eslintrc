@@ -1,11 +1,8 @@
 {
-  "extends": "eslint-config-airbnb-base",
+  "extends": [
+    "eslint-config-airbnb-base"
+  ],
   "plugins": [
     "eslint-plugin-import"
-  ],
-  "rules": {
-    "arrow-parens": ["error", "as-needed"],
-    "no-unused-expressions": ["error", { "allowShortCircuit": true }],
-    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
-  }
+  ]
 }
