@@ -1,4 +1,3 @@
+const download = require('./download.js');
 
-var download = require('./download.js');
-
-download(function() {});
+download(() => {});
