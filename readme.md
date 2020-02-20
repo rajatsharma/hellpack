@@ -14,6 +14,9 @@
   <a href="https://github.com/rajatsharma/hellpack/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/rajatsharma/hellpack" />
   </a>
+  <a href="https://github.com/rajatsharma/hellpack/actions/runs/42248238" target="_blank">
+    <img alt="Build Status" src="https://github.com/rajatsharma/hellpack/workflows/Build%20Bin/badge.svg" />
+  </a>
 </p>
 
 <h5 align="center">From 0 to eslint, real quick!</h5>
