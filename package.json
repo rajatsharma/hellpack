@@ -6,10 +6,9 @@
     "yarn": ">=1.22.0"
   },
   "bin": {
-    "hellpack": "bin/hellpack.js"
+    "hellpack": "bin/hellpack"
   },
   "files": [
-    "index.js",
     "bin"
   ],
   "description": "From 0 to eslint, real quick!",
@@ -18,9 +17,11 @@
     "url": "git+https://github.com/rajatsharma/hellpack.git"
   },
   "scripts": {
-    "dev": "cargo run",
+    "bootstrap": "lerna bootstrap && cargo install",
     "build": "cargo build",
-    "bootstrap": "lerna bootstrap && cargo install"
+    "dev": "cargo run",
+    "release": "cargo build --release",
+    "wrap": "yarn release && cp target/release/hellpack bin/"
   },
   "bugs": {
     "url": "https://github.com/rajatsharma/hellpack/issues"
@@ -31,8 +32,5 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
     "lerna": "^3.5.1"
-  },
-  "dependencies": {
-    "got": "^10.5.5"
   }
 }
