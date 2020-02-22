@@ -1,10 +1,14 @@
+name: Use Bin
+
+on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-16.04
     strategy:
       matrix:
         node: [ '10', '8' ]
-    name: Npx ${{ matrix.node }} test
+    name: Npx ${{ matrix.node }} test ubuntu-16.04
     steps:
       - uses: actions/checkout@v2
       - name: Setup node
@@ -13,13 +17,12 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: npx hellpack eslint
 
-jobs:
   build:
     runs-on: macos-latest
     strategy:
       matrix:
         node: [ '10', '8' ]
-    name: Npx ${{ matrix.node }} test
+    name: Npx ${{ matrix.node }} test macos-latest
     steps:
       - uses: actions/checkout@v2
       - name: Setup node
@@ -28,13 +31,12 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: npx hellpack eslint
 
-jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node: [ '10', '8' ]
-    name: Npx ${{ matrix.node }} test
+    name: Npx ${{ matrix.node }} test ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Setup node
