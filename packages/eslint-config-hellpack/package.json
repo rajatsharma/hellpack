@@ -17,8 +17,5 @@
     "eslint-config-airbnb-base": "13.1.0",
     "read-pkg-up": "^4.0.0"
   },
-  "devDependencies": {
-    "eslint-plugin-import": "2.16.0"
-  },
   "gitHead": "74a305a7e88f83a65785b2cbc5da786abdb70dfc"
 }

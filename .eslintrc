@@ -1,8 +1,0 @@
-{
-  "extends": [
-    "eslint-config-airbnb-base"
-  ],
-  "plugins": [
-    "eslint-plugin-import"
-  ]
-}

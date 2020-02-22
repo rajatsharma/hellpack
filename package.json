@@ -2,8 +2,7 @@
   "name": "hellpack",
   "version": "3.0.0",
   "engines": {
-    "node": ">=10.18.0",
-    "yarn": ">=1.22.0"
+    "node": ">=8.0.0"
   },
   "bin": {
     "hellpack": "bin/hellpack"
@@ -28,9 +27,6 @@
   },
   "homepage": "https://github.com/rajatsharma/hellpack#readme",
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.1",
     "lerna": "^3.5.1"
   }
 }
