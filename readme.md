@@ -21,17 +21,17 @@
 
 <h5 align="center">From 0 to eslint, real quick!</h5>
 
+<a href="https://github.com/rajatsharma/hellpack"><img src="cli.png" alt="hellpack"></a>
 
-### 🧰 Prerequisites
+## List of commands
 
-- `node >=10.18.0`
-- `yarn >=1.22.0`
+### `$ npx hellpack eslint`
 
-### 🚀 Usage
+Generates .eslint file according to your project and installs required dependencies.
 
-```sh
-$ npx hellpack eslint
-```
+Hellpack will go through your `package.json` to install and configure latest eslint config and plugins according to dependencies found.
+
+
 
 ## 🤓 About me
 
