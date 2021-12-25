@@ -3,9 +3,12 @@ package cmd
 import (
 	"os"
 
-	"github.com/gobuffalo/packr/v2"
 	"github.com/spf13/cobra"
 )
+
+var tsconfig []byte
+var reactEslintrc []byte
+var nodeEslintrc []byte
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
@@ -15,6 +18,12 @@ var rootCmd = &cobra.Command{
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
+}
+
+func SetConfigs(staticTsconfig []byte, staticReactEslintrc []byte, staticNodeEslintrc []byte) {
+	tsconfig = staticTsconfig
+	reactEslintrc = staticReactEslintrc
+	nodeEslintrc = staticNodeEslintrc
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -33,11 +42,13 @@ func check(err error) {
 }
 
 func generate(project string) {
-	box := packr.New("Configs", "../configs")
-	eslintrc, err := box.Find("eslintrc." + project + ".json")
-	check(err)
-	tsconfig, err := box.Find("tsconfig.json")
-	check(err)
+	var eslintrc []byte
+	if project == "node" {
+		eslintrc = nodeEslintrc
+	} else {
+		eslintrc = reactEslintrc
+	}
+
 	path, err := os.Getwd()
 	check(err)
 	check(os.WriteFile(path+"/.eslintrc", eslintrc, 0644))
