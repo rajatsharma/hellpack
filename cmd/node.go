@@ -1,7 +1,6 @@
 package cmd
 
 import (
-	_ "embed"
 	"os/exec"
 
 	"github.com/spf13/cobra"
