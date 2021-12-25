@@ -10,16 +10,6 @@ var tsconfig []byte
 var reactEslintrc []byte
 var nodeEslintrc []byte
 
-// rootCmd represents the base command when called without any subcommands
-var rootCmd = &cobra.Command{
-	Use:   "hellpack",
-	Short: "🔥From 0 to eslint, real quick!",
-	Long:  `Generates .eslint file according to your project and installs required dependencies.`,
-	// Uncomment the following line if your bare application
-	// has an action associated with it:
-	// Run: func(cmd *cobra.Command, args []string) { },
-}
-
 func SetConfigs(staticTsconfig []byte, staticReactEslintrc []byte, staticNodeEslintrc []byte) {
 	tsconfig = staticTsconfig
 	reactEslintrc = staticReactEslintrc
@@ -33,6 +23,16 @@ func Execute() {
 	if err != nil {
 		os.Exit(1)
 	}
+}
+
+// rootCmd represents the base command when called without any subcommands
+var rootCmd = &cobra.Command{
+	Use:   "hellpack",
+	Short: "🔥From 0 to eslint, real quick!",
+	Long:  `Generates .eslint file according to your project and installs required dependencies.`,
+	// Uncomment the following line if your bare application
+	// has an action associated with it:
+	// Run: func(cmd *cobra.Command, args []string) { },
 }
 
 func check(err error) {
