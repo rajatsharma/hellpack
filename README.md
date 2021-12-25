@@ -9,10 +9,10 @@ go get github.com/rajatsharma/hellpack
 
 ## List of commands
 
-### `$ hellpack react`
+### `hellpack react`
 Generate .eslintrc and tsconfig for a React project
 
-### `$ hellpack node`
+### `hellpack node`
 Generate .eslintrc and tsconfig for a Node project
 
 ## 🤝 Contributing
