@@ -1,0 +1,12 @@
+{
+  "name": "hellpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rajatsharma/hellpack",
+  "author": "Rajat Sharma <lunasunkaiser@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "install": "stack install",
+    "uninstall": "rm -rf `stack path --local-bin`/hp"
+  }
+}
