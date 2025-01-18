@@ -1,7 +1,7 @@
 <h1 align="center">Hellpack 🔥</h1>
 <h5 align="center">Getting started with Typescript application in seconds!</h5>
 
-> Note: This is only meant for server or CLI applications, for frontend applications use [Vite](https://vite.dev/).
+> Note: This program is only meant for server or CLI applications, for frontend applications use [Vite](https://vite.dev/).
 
 ### Installation
 
