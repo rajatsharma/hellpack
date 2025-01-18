@@ -4,7 +4,7 @@
 ### Installation
 
 ```nix
-db-up-derivation = ({ pkgs, package, rev, ghc }:
+hellpack-derivation = ({ pkgs, package, rev, ghc }:
   pkgs.stdenv.mkDerivation {
     name = "${package}";
     src = builtins.fetchGit {
@@ -25,11 +25,11 @@ db-up-derivation = ({ pkgs, package, rev, ghc }:
 Call the function
 
 ```nix
-db-up = db-up-derivation {
+hellpack = hellpack-derivation {
   pkgs = pkgs;
   ghc = ghc;
   package = "hellpack";
-  rev = "2dfa8c678b060ee686bbb522ca8bc8362b050b49";
+  rev = "209e59f6130d36678a8b504f8b2a81f13c168967";
 };
 ```
 
