@@ -1,28 +1,46 @@
 <h1 align="center">Hellpack 🔥</h1>
-<h5 align="center">From 0 to eslint, real quick!</h5>
+<h5 align="center">Getting started with Typescript application in seconds!</h5>
 
-## Installation
+### Installation
 
-```sh
-go get github.com/rajatsharma/hellpack
+```nix
+db-up-derivation = ({ pkgs, package, rev, ghc }:
+  pkgs.stdenv.mkDerivation {
+    name = "${package}";
+    src = builtins.fetchGit {
+      url = "git@github.com:rajatsharma/${package}";
+      ref = "master";
+      rev = rev;
+    };
+    buildPhase = ''
+      ${ghc}/bin/ghc Main.hs
+    '';
+    installPhase = ''
+      mkdir -p $out/bin
+      cp -r ./Main $out/bin/${package}
+    '';
+  });
 ```
 
-## List of commands
+Call the function
+
+```nix
+db-up = db-up-derivation {
+  pkgs = pkgs;
+  ghc = ghc;
+  package = "hellpack";
+  rev = "2dfa8c678b060ee686bbb522ca8bc8362b050b49";
+};
+```
+
+## Usage
+
+Run this in the project directory
 
 ```sh
-hellpack react
+hellpack
 ```
-Generate .eslintrc and tsconfig for a React project
-
-```sh
-hellpack node
-```
-Generate .eslintrc and tsconfig for a Node project
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/rajatsharma/hellpack/issues). You can also take a look at the [contributing guide](https://github.com/rajatsharma/hellpack/blob/master/CONTRIBUTING.md).
 
 ## 📝 License
 
-This project is [MIT](https://github.com/rajatsharma/hellpack/blob/master/LICENSE) licensed.
+Read License [here](https://github.com/rajatsharma/hellpack/blob/master/LICENSE).
