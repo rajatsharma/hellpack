@@ -31,7 +31,7 @@ hellpack = hellpack-derivation {
   pkgs = pkgs;
   ghc = ghc;
   package = "hellpack";
-  rev = "97b1d17d8f840f5f1bc14dd0ece697de5b398040";
+  rev = "fe703b81e385ac276365dbf5e9dc3cacfdf5fad8";
 };
 ```
 
