@@ -8,7 +8,7 @@ import Control.Monad (when)
 import Data.FileEmbed (embedStringFile)
 import System.Directory (getCurrentDirectory)
 import System.FilePath (takeBaseName)
-import System.Process (runCommand)
+import System.Process (callCommand, runCommand)
 import Text.Printf (printf)
 import Turtle (Parser, options, switch)
 
@@ -31,11 +31,11 @@ main = do
   let directoryName = takeBaseName currectDirectory
   writeFile "package.json" $ printf packageJson directoryName
   writeFile "tsconfig.json" tsconfigJson
-  runCommand "pnpm i -D prettier @types/node typescript tsx"
+  callCommand "pnpm i -D prettier @types/node typescript tsx"
   when withDb do
-    runCommand "pnpm i slonik"
-    runCommand "db-up"
+    callCommand "pnpm i slonik"
+    callCommand "db-up"
     pure ()
   when withExpress do
-    runCommand "pnpm i express"
+    callCommand "pnpm i express"
     pure ()
