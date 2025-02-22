@@ -5,34 +5,8 @@
 
 ### Installation
 
-```nix
-hellpack-derivation = ({ pkgs, package, rev, ghc }:
-  pkgs.stdenv.mkDerivation {
-    name = "${package}";
-    src = builtins.fetchGit {
-      url = "git@github.com:rajatsharma/${package}";
-      ref = "master";
-      rev = rev;
-    };
-    buildPhase = ''
-      ${ghc}/bin/ghc Main.hs
-    '';
-    installPhase = ''
-      mkdir -p $out/bin
-      cp -r ./Main $out/bin/${package}
-    '';
-  });
-```
-
-Call the function
-
-```nix
-hellpack = hellpack-derivation {
-  pkgs = pkgs;
-  ghc = ghc;
-  package = "hellpack";
-  rev = "fe703b81e385ac276365dbf5e9dc3cacfdf5fad8";
-};
+```shell
+pnpm i -g ssh://git@github.com:rajatsharma/hellpack.git
 ```
 
 ## Usage
